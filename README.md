@@ -29,14 +29,14 @@ example, if the current priority of the process is 5, then it is updated to 4. T
 have to perform this update at each (logical) time. However, to make the simulation program
 simple, we will do this update only when the system finishes the execution of a process.
 
-#Data Structures
+# Data Structures
 
 To complete this project I decided to use 3 data structures all of which were priority queues. The first priority queue is used to hold the process information we get from the text file. I decided to use a priority queue because I wanted to have the processes sorted by arrival time. By using this data structure, it made it easier to later pop processes as the current time was more than or equal to the process arrival and input them into the second priority queue. An additional benefit about using a priority queue from java is that I did not have to worry about the size of the input data as I would if I used a simpler data structure such as an array.
 
 The second and third priority queues are connected. The second priority queue is used to transfer the processes once the arrival time condition is met. In this priority queue the processes are stored by priority which simplifies the order and which we process each process.
 The reason I used a third priority queue is to be able to update the priority of processes as they met the wait time condition. This third priority queue serves as a temporary data holding area because we can only look at the top of the pile of queues. During each loop I test whether any process has meet the wait time condition. If it has meet the wait time condition the priority gets updated and that process gets added to the third priority queue. If the process has not met the criteria it gets added into the third priority queue without any changes. Once the second priority queue is empty then we add everything back from the third priority queue.
 
-#Observations
+# Observations
 
 Although I used priority queues as the main data structures in my program I first tested my data with a simple array with a fixed size to test that all the data was imported correctly and completely. This showed me that there are many different data structures that could work better or worse for the assignment. However, I believe that my choice of using priority queues was good as it made it easy to have it always sorted in the order that I needed it.
 
