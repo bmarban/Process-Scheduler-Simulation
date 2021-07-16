@@ -1,0 +1,133 @@
+All processes:
+	ID = 1	Priority = 4	Duration = 25	Arrival Time = 10
+	ID = 2	Priority = 3	Duration = 15	Arrival Time = 17
+	ID = 3	Priority = 1	Duration = 17	Arrival Time = 26
+	ID = 4	Priority = 9	Duration = 17	Arrival Time = 30
+	ID = 5	Priority = 10	Duration = 9	Arrival Time = 40
+	ID = 6	Priority = 6	Duration = 14	Arrival Time = 47
+	ID = 7	Priority = 7	Duration = 18	Arrival Time = 52
+	ID = 8	Priority = 5	Duration = 18	Arrival Time = 70
+	ID = 9	Priority = 2	Duration = 16	Arrival Time = 93
+	ID = 10	Priority = 8	Duration = 20	Arrival Time = 125
+
+Maximum wait time = 30
+Process removed from queue is: id = 1, at time 10, wait time = 0 Total wait time = 0
+Process id = 1
+	Priority = 4
+	Arrival = 10
+	Duration = 25
+Process 1 finished at time 35
+
+Update priority:
+
+Process removed from queue is: id = 3, at time 35, wait time = 9 Total wait time = 9
+Process id = 3
+	Priority = 1
+	Arrival = 26
+	Duration = 17
+Process 3 finished at time 52
+
+Update priority:
+PID = 2, wait time = 35, current priority = 3
+PID = 2, new priority = 2
+
+Process removed from queue is: id = 2, at time 52, wait time = 35 Total wait time = 44
+Process id = 2
+	Priority = 2
+	Arrival = 17
+	Duration = 15
+Process 2 finished at time 67
+
+Update priority:
+PID = 4, wait time = 37, current priority = 9
+PID = 4, new priority = 8
+
+Process removed from queue is: id = 6, at time 67, wait time = 20 Total wait time = 64
+Process id = 6
+	Priority = 6
+	Arrival = 47
+	Duration = 14
+Process 6 finished at time 81
+
+Update priority:
+PID = 4, wait time = 51, current priority = 8
+PID = 4, new priority = 7
+PID = 5, wait time = 41, current priority = 10
+PID = 5, new priority = 9
+
+Process removed from queue is: id = 8, at time 81, wait time = 11 Total wait time = 75
+Process id = 8
+	Priority = 5
+	Arrival = 70
+	Duration = 18
+Process 8 finished at time 99
+
+Update priority:
+PID = 7, wait time = 47, current priority = 7
+PID = 7, new priority = 6
+PID = 4, wait time = 69, current priority = 7
+PID = 4, new priority = 6
+PID = 5, wait time = 59, current priority = 9
+PID = 5, new priority = 8
+
+Process removed from queue is: id = 9, at time 99, wait time = 6 Total wait time = 81
+Process id = 9
+	Priority = 2
+	Arrival = 93
+	Duration = 16
+Process 9 finished at time 115
+
+Update priority:
+PID = 7, wait time = 63, current priority = 6
+PID = 7, new priority = 5
+PID = 4, wait time = 85, current priority = 6
+PID = 4, new priority = 5
+PID = 5, wait time = 75, current priority = 8
+PID = 5, new priority = 7
+
+Process removed from queue is: id = 7, at time 115, wait time = 63 Total wait time = 144
+Process id = 7
+	Priority = 5
+	Arrival = 52
+	Duration = 18
+Process 7 finished at time 133
+
+Update priority:
+PID = 4, wait time = 103, current priority = 5
+PID = 4, new priority = 4
+PID = 5, wait time = 93, current priority = 7
+PID = 5, new priority = 6
+
+Process removed from queue is: id = 4, at time 133, wait time = 103 Total wait time = 247
+Process id = 4
+	Priority = 4
+	Arrival = 30
+	Duration = 17
+Process 4 finished at time 150
+
+Update priority:
+PID = 5, wait time = 110, current priority = 6
+PID = 5, new priority = 5
+
+Process removed from queue is: id = 5, at time 150, wait time = 110 Total wait time = 357
+Process id = 5
+	Priority = 5
+	Arrival = 40
+	Duration = 9
+Process 5 finished at time 159
+
+Update priority:
+PID = 10, wait time = 34, current priority = 8
+PID = 10, new priority = 7
+
+Process removed from queue is: id = 10, at time 159, wait time = 34 Total wait time = 391
+Process id = 10
+	Priority = 7
+	Arrival = 125
+	Duration = 20
+Process 10 finished at time 179
+
+Update priority:
+
+Total wait time = 391
+Average wait time = 39.1
